@@ -1,0 +1,8 @@
+@use './sass/variable.scss' as var;
+
+.wrapper {
+	background: var.$blue-dark;
+	min-width: 100vw;
+	min-height: 100vh;
+	padding-top: 30px;
+}

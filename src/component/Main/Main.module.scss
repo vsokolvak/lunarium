@@ -1,0 +1,15 @@
+@use '../../sass/mixin.scss' as mix;
+
+.main {
+	@include mix.flex();
+	background: rgb(35, 28, 49);
+	align-items: start;
+
+	.left {
+		width: 250px;
+	}
+
+	.right {
+		width: 100%;
+	}
+}

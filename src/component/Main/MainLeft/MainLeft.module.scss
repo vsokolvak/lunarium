@@ -1,0 +1,72 @@
+@use '../../../sass/mixin.scss' as mix;
+@use '../../../sass/variable.scss' as var;
+
+.wrapper {
+	@include mix.flex();
+	flex-direction: column;
+	width: 250px;
+	background-color: var.$blue-dark;
+}
+
+.rec {
+	width: 100%;
+	@include mix.flex();
+	flex-direction: column;
+	padding: 0 20px;
+
+	.navigation {
+		width: 100%;
+		@include mix.flex();
+		justify-content: space-between;
+
+		span {
+			font-size: 20px;
+			color: #FFF;
+		}
+
+		button {
+			width: 20px;
+			height: 20px;
+			background-color: var.$violet;
+			@include mix.flex();
+			transition: all 0.3s ease-in-out;
+			border-radius: 4px;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+
+		.navRevrs {
+
+			img {
+				transform: rotate(180deg);
+
+			}
+		}
+
+	}
+
+	.itemList {
+		@include mix.flex();
+		flex-direction: column;
+		margin-top: 20px;
+		background-color: white;
+
+		img {
+			width: 100%;
+		}
+
+		span {
+			color: black;
+			padding: 10px;
+			font-size: 16px;
+		}
+
+		.price {
+			font-size: 20px;
+			padding: 0 10px 10px;
+			width: 100%;
+		}
+	}
+}

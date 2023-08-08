@@ -1,26 +1,15 @@
 import classes from './Header.module.scss'
 import { contact } from '../../constant/constant'
+import Contact from './Contact/Contact'
+import Logo from './Logo/Logo'
 
 const Header = props => {
-	return <div>
-		<div className={classes.contact}>
-			<div>
-				<img src="#" alt="phone" />
-				<span> {contact.phone} </span>
-			</div>
-			<div>
-				<img src="#" alt="viber" />
-				<span> {contact.viber} </span>
-			</div>
-			<div>
-				<img src="#" alt="telegram" />
-				<span> {contact.telegram} </span>
-			</div>	
-			<div>
-				<img src="#" alt="email" />
-				<span> {contact.email} </span>
-			</div>	
-		</div>
+	return <div >
+		{/* блок контактів */}
+		<Contact />
+
+		{/* нижній блок, лого + пошук */}
+		<Logo />
 	</div>
 }
 
