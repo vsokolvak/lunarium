@@ -1,6 +1,7 @@
 import classes from './MainLeft.module.scss'
 import arrow from '../../../img/icon/arrow.svg'
 import img1 from '../../../img/recomendation/img1.webp'
+import Response from './Response/Response'
 
 const MainLeft = props => {
 	return <div className={classes.wrapper}>
@@ -24,6 +25,16 @@ const MainLeft = props => {
 					210 грн
 				</span>
 			</div>
+		</div>
+
+		{/* відгуки */}
+		<div className={classes.response}>
+			<h4>Останні відгуки</h4>
+
+			<Response />
+			<Response />
+			<Response />
+			
 		</div>
 		
 	</div>

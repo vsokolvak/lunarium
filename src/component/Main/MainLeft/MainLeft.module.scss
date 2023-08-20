@@ -70,3 +70,18 @@
 		}
 	}
 }
+
+.response {
+	width: 100%;
+	@include mix.flex();
+	flex-direction: column;
+	padding: 0 20px;
+	margin-top: 40px;
+
+	h4 {
+		color: white;
+		font-size: 20px;
+		align-self: start;
+		margin-bottom: 20px;
+	}
+}

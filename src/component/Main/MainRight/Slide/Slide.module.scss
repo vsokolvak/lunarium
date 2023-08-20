@@ -1,0 +1,47 @@
+@use '../../../../sass/mixin.scss' as mix;
+@use '../../../../sass/variable.scss' as var;
+
+.wrapper {
+	@include mix.flex();
+	width: 100%;
+}
+
+.slideImg {
+	width: 100%;
+	overflow: hidden;
+	border-radius: 4px;
+	border: 1px solid var.$blue-dark;
+	position: relative;
+
+	.photoSlide {
+		@include mix.flex;
+		width: 400%;
+		transition: transform 0.5s ease-out;
+
+		img {
+			width: 25%;
+			height: 100%;
+		}
+	}
+
+	.buttons {
+		position: absolute;
+		left: 50%;
+		bottom: 10%;
+		transform: translateX(-50%);
+		@include mix.flex();
+		gap: 10px;
+
+		button {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			border: 1px solid white;
+			background: none;
+		}
+
+		button.active {
+			background-color: white;
+		}
+	}
+}

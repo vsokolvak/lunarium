@@ -1,0 +1,72 @@
+@use '../../../../sass/mixin.scss' as mix;
+@use '../../../../sass/variable.scss' as var;
+
+.wrapper {
+	@include mix.flex();
+	width: 100%;
+
+	menu {
+		@include mix.flex();
+		justify-content: start;
+		width: 100%;
+		background-color: white;
+
+		a {
+			padding: 20px;
+			color: black;
+			font-size: 16px;
+			position: relative;
+
+			&:hover {
+				color: var.$violet;
+
+				.tovarlist {
+					opacity: 1;
+				}
+			}
+
+			.tovarlist {
+				background-color: white;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				width: 100%;
+				opacity: 0;
+				transition: all 0.3s ease-in-out;
+				z-index: 10;
+
+				a {
+					padding: 10px;
+					color: black;
+					border-top: 1px solid grey;
+					@include mix.flex();
+					flex-direction: column;
+
+					&:hover {
+						color: var.$violet;
+					}
+				}
+			}
+		}
+
+		.openMenu {
+			@include mix.flex();
+			gap: 5px;
+
+			img {
+				width: 16px;
+				height: 16px;
+				transform: rotate(90deg);
+			}
+		}
+
+		.active {
+			color: white;
+			background-color: var.$violet;
+
+			&:hover {
+				color: white;
+			}
+		}
+	}
+}

@@ -1,0 +1,83 @@
+@use '../../../../sass/mixin.scss' as mix;
+@use '../../../../sass/variable.scss' as var;
+
+.wrapper {
+	@include mix.flex();
+	flex-direction: column;
+	width: 100%;
+	background-color: var.$blue-dark;
+	padding: 10px;
+	background-color: var.$dark-violet;
+	margin: 10px 0;
+	border-radius: 10px;
+	
+	.buyer, .date, .rate, .purshase {
+		@include mix.flex();
+		align-self: start;
+		gap: 10px;
+		padding: 5px 0;
+
+		span {
+			color: white;
+			font-size: 18px;
+		}
+	}
+
+	.buyer {
+
+		img {
+			width: 18px;
+		}
+	}
+
+	.rate {
+		flex-direction: column;
+
+		.star {
+			@include mix.flex();
+			gap: 2px;
+			align-items: start;
+
+			img {
+				width: 18px;
+			}
+		}
+
+		span {
+			align-self: start;
+		}
+	}
+
+	.goods {
+		&::before {
+			content: '';
+			display: block;
+			height: 1px;
+			width: 100%;
+			background-color: white;
+		}
+
+		span {
+			display: block;
+			border: 1px solid black;
+			color: black;
+			background-color: white;
+			font-size: 16px;
+			border-radius: 15px;
+			padding: 10px;
+			text-align: justify;
+			margin-top: 10px;
+		}
+	}
+
+	.emotions {
+		span {
+				display: block;
+				border: 1px solid white;
+				border-radius: 15px;
+				padding: 10px;
+				text-align: justify;
+				margin-top: 10px;
+			}
+	}
+}
