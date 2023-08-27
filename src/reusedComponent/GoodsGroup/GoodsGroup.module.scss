@@ -1,0 +1,50 @@
+@use '../../sass/mixin.scss' as mix;
+@use '../../sass/variable.scss' as var;
+
+.wrapper {
+	@include mix.flex();
+	background: rgb(35, 28, 49);
+	gap: 20px;
+	flex-wrap: wrap;
+	padding: 20px;
+	align-items: start;
+	justify-content: space-around;
+
+}
+
+.goods {
+	@include mix.flex();
+	flex-direction: column;
+	width: 20%;
+	min-width: 200px;
+	justify-content: start;
+	background-color: white;
+	border-radius: 15px;
+	border: 1px solid var.$violet;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+	}
+
+	button {
+		width: 100%;
+		background-color: var.$violet;
+		color: white;
+		font-size: var.$size-large;
+	}
+
+	p {
+		font-size: var.$size-small;
+		color: black;
+		padding: 10px;
+
+	}
+
+	span {
+		font-size: var.$size-large;
+		color: black;
+		width: 100%;
+		padding: 10px;
+	}
+}

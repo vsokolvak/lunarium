@@ -5,79 +5,102 @@
 	@include mix.flex();
 	flex-direction: column;
 	width: 100%;
+	max-width: 250px;
 	background-color: var.$blue-dark;
 	padding: 10px;
 	background-color: var.$dark-violet;
 	margin: 10px 0;
 	border-radius: 10px;
-	
-	.buyer, .date, .rate, .purshase {
-		@include mix.flex();
-		align-self: start;
-		gap: 10px;
-		padding: 5px 0;
+}
 
-		span {
-			color: white;
-			font-size: 18px;
-		}
+.buyer,
+.date,
+.rate,
+.purshase {
+	@include mix.flex();
+	align-self: start;
+	gap: 10px;
+	padding: 5px 0;
+
+	span {
+		color: white;
+		font-size: var.$size-large;
 	}
+}
 
-	.buyer {
+.buyer {
+
+	img {
+		width: 18px;
+	}
+}
+
+.rate {
+	flex-direction: column;
+
+	.star {
+		@include mix.flex();
+		gap: 2px;
+		align-items: start;
 
 		img {
 			width: 18px;
 		}
 	}
 
-	.rate {
-		flex-direction: column;
+	span {
+		align-self: start;
+	}
+}
 
-		.star {
-			@include mix.flex();
-			gap: 2px;
-			align-items: start;
+.emotions {
+	span {
+		display: block;
+		border: 1px solid white;
+		border-radius: 15px;
+		padding: 10px;
+		text-align: justify;
+		margin-top: 10px;
+	}
+}
 
-			img {
-				width: 18px;
-			}
-		}
+.goods {
+	&::before {
+		content: '';
+		display: block;
+		height: 1px;
+		width: 100%;
+		background-color: white;
+	}
+
+	span {
+		display: block;
+		border: 1px solid black;
+		color: black;
+		background-color: white;
+		font-size: var.$size-large;
+		border-radius: 15px;
+		padding: 10px;
+		text-align: justify;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.buyer,
+	.date,
+	.rate,
+	.purshase {
 
 		span {
-			align-self: start;
+			font-size: var.$size1-large;
 		}
 	}
 
 	.goods {
-		&::before {
-			content: '';
-			display: block;
-			height: 1px;
-			width: 100%;
-			background-color: white;
-		}
 
 		span {
-			display: block;
-			border: 1px solid black;
-			color: black;
-			background-color: white;
-			font-size: 16px;
-			border-radius: 15px;
-			padding: 10px;
-			text-align: justify;
-			margin-top: 10px;
+			font-size: var.$size1-large;
 		}
-	}
-
-	.emotions {
-		span {
-				display: block;
-				border: 1px solid white;
-				border-radius: 15px;
-				padding: 10px;
-				text-align: justify;
-				margin-top: 10px;
-			}
 	}
 }

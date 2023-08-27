@@ -32,43 +32,79 @@
 	justify-content: space-around;
 	flex-wrap: wrap;
 	gap: 20px;
+}
 
-	.goods {
-		@include mix.flex();
-		flex-direction: column;
-		border-radius: 15px;
-		overflow: hidden;
-		cursor: pointer;
-		position: relative;
+.goods {
+	@include mix.flex();
+	flex-direction: column;
+	border-radius: 15px;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	width: 30%;
 
-		.description {
-			width: 100%;
-			background-color: var.$blue-dark;
-			@include mix.flex();
-			flex-direction: column;
-			transition: all 0.3s ease-in;
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			opacity: 0.9;
+	img {
+		width: 100%;
+	}
 
-			span {
-				font-size: 20px;
-				color: white;
-				text-align: center;
-				padding: 15px;
-			}
-
-			.hidden {
-				font-size: 16px;
-				display: none;
-			}
+	&:hover {
+		.hidden {
+			display: block;
 		}
+	}
+}
 
-		&:hover {
-			.hidden {
-				display: block;
-			}
+.description {
+	width: 100%;
+	background-color: var.$blue-dark;
+	@include mix.flex();
+	flex-direction: column;
+	transition: all 0.3s ease-in;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	opacity: 0.9;
+
+	span {
+		font-size: var.$size-medium;
+		color: white;
+		text-align: center;
+		padding: 15px;
+	}
+}
+
+.hidden {
+	font-size: var.$size-large;
+	display: none;
+}
+
+
+@media (max-width: 1100px) {
+	
+	.description {
+
+		span {
+			font-size: var.$size1-medium;
 		}
+	}
+
+	.hidden {
+		font-size: var.$size1-large;
+	}
+}
+
+
+@media (max-width: 750px) {
+	
+	.description {
+
+		span {
+			font-size: var.$size1-large;
+			padding: 5px;
+		}
+	}
+
+	.hidden {
+		font-size: var.$size1-large;
 	}
 }

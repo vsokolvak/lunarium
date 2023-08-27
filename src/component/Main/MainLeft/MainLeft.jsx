@@ -1,7 +1,8 @@
 import classes from './MainLeft.module.scss'
 import arrow from '../../../img/icon/arrow.svg'
-import img1 from '../../../img/recomendation/img1.webp'
 import Response from './Response/Response'
+import GodsCard from '../../../reusedComponent/GodsCard/GodsCard'
+import Working from './Working/Working'
 
 const MainLeft = props => {
 	return <div className={classes.wrapper}>
@@ -17,25 +18,25 @@ const MainLeft = props => {
 					<img src={arrow} alt="right" />
 				</button>
 			</div>
-			<div className={classes.itemList}> 
-				<img src={img1} alt="tovar" />
-				<span>Чашка чорна "Найкращому дідусеві у світі" для улюбленого дідуся</span>
-
-				<span className={classes.price}>
-					210 грн
-				</span>
+			<div className={classes.itemList}>
+				<GodsCard />
 			</div>
+
 		</div>
 
 		{/* відгуки */}
 		<div className={classes.response}>
 			<h4>Останні відгуки</h4>
 
-			<Response />
-			<Response />
-			<Response />
+			<div className={classes.responseList}>
+				<Response />
+				<Response />
+				<Response />
+			</div>
 			
 		</div>
+
+		<Working />
 		
 	</div>
 }

@@ -1,0 +1,53 @@
+@use '../../../../sass/mixin.scss' as mix;
+@use '../../../../sass/variable.scss' as var;
+
+.wrapper {
+	@include mix.flex();
+	flex-direction: column;
+	width: 100%;
+	background-color: var.$blue-dark;
+	padding: 10px;
+	background-color: var.$dark-violet;
+	margin: 10px 0;
+	border-radius: 10px;
+	
+	hr {
+		height: 1px;
+		width: 100%;
+		background-color: white;
+	}
+}
+
+.title {
+	font-size: var.$size-medium;
+	color: white;
+	padding: 10px;
+}
+
+.working {
+	width: 100%;
+	@include mix.flex();
+	justify-content: space-between;
+	padding: 10px;
+	padding-bottom: 3px;
+
+	span {
+		font-size: var.$size-small;
+		color: white;
+	}
+}
+
+
+@media (max-width: 1100px) {
+
+	.title {
+			font-size: var.$size1-medium;
+	}
+
+	.working {
+
+		span {
+			font-size: var.$size1-small;
+		}
+	}
+}

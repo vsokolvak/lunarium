@@ -4,7 +4,7 @@
 .wrapper {
 	@include mix.flex();
 	flex-direction: column;
-	width: 250px;
+	width: 100%;
 	background-color: var.$blue-dark;
 }
 
@@ -12,76 +12,86 @@
 	width: 100%;
 	@include mix.flex();
 	flex-direction: column;
-	padding: 0 20px;
+}
 
-	.navigation {
-		width: 100%;
-		@include mix.flex();
-		justify-content: space-between;
+.navigation {
+	width: 100%;
+	max-width: 250px;
+	@include mix.flex();
+	justify-content: space-between;
 
-		span {
-			font-size: 20px;
-			color: #FFF;
-		}
-
-		button {
-			width: 20px;
-			height: 20px;
-			background-color: var.$violet;
-			@include mix.flex();
-			transition: all 0.3s ease-in-out;
-			border-radius: 4px;
-
-			&:hover {
-				transform: scale(1.1);
-			}
-		}
-
-		.navRevrs {
-
-			img {
-				transform: rotate(180deg);
-
-			}
-		}
-
+	span {
+		font-size: var.$size-medium;
+		color: #FFF;
 	}
 
-	.itemList {
+	button {
+		width: 20px;
+		height: 20px;
+		background-color: var.$violet;
 		@include mix.flex();
-		flex-direction: column;
-		margin-top: 20px;
-		background-color: white;
+		transition: all 0.3s ease-in-out;
+		border-radius: 4px;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	.navRevrs {
 
 		img {
-			width: 100%;
-		}
+			transform: rotate(180deg);
 
-		span {
-			color: black;
-			padding: 10px;
-			font-size: 16px;
-		}
-
-		.price {
-			font-size: 20px;
-			padding: 0 10px 10px;
-			width: 100%;
 		}
 	}
+
+}
+
+.itemList {
+	@include mix.flex();
+	gap: 20px;
 }
 
 .response {
 	width: 100%;
 	@include mix.flex();
 	flex-direction: column;
-	padding: 0 20px;
 	margin-top: 40px;
 
 	h4 {
 		color: white;
-		font-size: 20px;
+		font-size: var.$size-medium;
 		align-self: start;
 		margin-bottom: 20px;
+	}
+}
+
+
+@media (max-width: 1100px) {
+	.navigation {
+
+		span {
+			font-size: var.$size1-medium;
+		}
+	}
+
+	.response {
+		width: 100%;
+		@include mix.flex();
+		margin-top: 40px;
+
+		h4 {
+			color: white;
+			font-size: var.$size1-medium;
+			align-self: center;
+			margin-bottom: 20px;
+		}
+
+		.responseList {
+			@include mix.flex();
+			flex-wrap: wrap;
+			gap: 20px;
+		}
 	}
 }

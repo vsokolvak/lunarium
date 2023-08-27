@@ -23,11 +23,26 @@ export const contact = {
 }
 
 export const menulist = [
-	'Головна', 
-	'Товари та послуги', 
-	'Про нас', 
-	'Контакти', 
-	'Доставка та оплата'
+	{
+		name: 'Головна',
+		href: '',
+	},
+	{
+		name: 'Товари та послуги',
+		href: 'goods&service',
+	}, 
+	{
+		name: 'Про нас',
+		href: 'about',
+	}, 
+	{
+		name: 'Контакти',
+		href: 'contact',
+	}, 
+	{
+		name: 'Доставка та оплата',
+		href: 'dev&pay'
+	},
 ]
 
 export const tovarlist = [
