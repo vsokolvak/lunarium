@@ -10,7 +10,17 @@ import giftBox from '../../img/goods/grup/giftBox.webp'
 import beerGlass from '../../img/goods/grup/beerGlass.webp'
 import puzzle from '../../img/goods/grup/puzzle.webp'
 
-import { hameleon } from './goodsGroup/hameleon/hameleon'
+import { hameleonGoods } from './goodsGroup/hameleonGoods/hameleonGoods'
+import { cupGoods } from './goodsGroup/cupGoods/cupGoods'
+import { pillowGoods } from './goodsGroup/pillowGoods/pillowGoods'
+import { cupPillowGoods } from './goodsGroup/cupPillowGoods/cupPillowGoods'
+import { boxCupGoods } from './goodsGroup/boxCupGoods/boxCupGoods'
+import { termalCupGoods } from './goodsGroup/termalCupGoods/termalCupGoods'
+import { ironFlaskGoods } from './goodsGroup/ironFlaskGoods/ironFlaskGoods'
+import { giftBoxGoods } from './goodsGroup/giftBoxGoods/giftBoxGoods'
+import { ironCupGoods } from './goodsGroup/ironCupGoods/ironCupGoods'
+import { beerGlassGoods } from './goodsGroup/beerGlassGoods/beerGlassGoods'
+import { puzzleGoods } from './goodsGroup/puzzleGoods/puzzleGoods'
 
 export const goods = [
 	// 'Чашки хамелеон'
@@ -19,76 +29,86 @@ export const goods = [
 		img: hameleonImg,
 		path: 'hameleon',
 		description: 'Чашка, яка міняє малюнок, від нагрівання. З вашим фото, або надписом.',
-		goods: hameleon,
+		goods: hameleonGoods,
 	},
 	// 'Чашки'
 	{
 		name: 'Чашки',
 		img: cup,
-		puth: 'cup',
+		path: 'cup',
 		description: 'Чашка З вашим фото, або надписом.',
+		goods: cupGoods,
 	},
 	// Подушка
 	{
 		name: 'Подушка',
 		img: pillow,
-		puth: 'pillow',
+		path: 'pillow',
 		description: 'Подушка З вашим фото, або надписом.',
+		goods: pillowGoods,
 	},
 	// Набір, Чашка та подушка
 	{
 		name: 'Набір, Чашка та подушка',
 		img: cupPillow,
-		puth: 'cupPillow',
+		path: 'cupPillow',
 		description: 'Чашка та подушка З вашим фото, або надписом.',
+		goods: cupPillowGoods,
 	},
 	// Подарункові коробки для чашок
 	{
 		name: 'Подарункові коробки для чашок',
 		img: boxCup,
-		puth: 'boxCup',
+		path: 'boxCup',
 		description: 'Дерев"яна коробка для чашки. З вашим фото, або надписом.',
+		goods: boxCupGoods,
 	},
 	// Термочашка
 	{
 		name: 'Термочашка',
 		img: termalCup,
-		puth: 'termalCup',
+		path: 'termalCup',
 		description: 'Чашка, яка зберігає ваш напій, як термос. З вашим фото, або надписом.',
+		goods: termalCupGoods,
 	},
 	// Металева фляга
 	{
 		name: 'Металева фляга',
 		img: ironFlask,
-		puth: 'ironFlask',
+		path: 'ironFlask',
 		description: 'Металева фляга. З вашим фото, або надписом.',
+		goods: ironFlaskGoods,
 	},
 	// Подарункові бокси
 	{
 		name: 'Подарункові бокси',
 		img: giftBox,
-		puth: 'giftBox',
+		path: 'giftBox',
 		description: 'Подарунковий бокс, з різноманітним наповненням.',
+		goods: giftBoxGoods,
 	},
 	// Металева чашка
 	{
 		name: 'Металева чашка',
 		img: ironCup,
-		puth: 'ironCup',
+		path: 'ironCup',
 		description: 'Металева чашка. З вашим фото, або надписом.',
+		goods: ironCupGoods,
 	},
 	// Пивні бокали
 	{
 		name: 'Пивні бокали',
 		img: beerGlass,
-		puth: 'beerGlass',
+		path: 'beerGlass',
 		description: 'Пивні бокали. З вашим фото, або надписом.',
+		goods: beerGlassGoods,
 	},
 	// Пазли
 	{
 		name: 'Пазли',
 		img: puzzle,
-		puth: 'puzzle',
+		path: 'puzzle',
 		description: 'Пазли. З вашим фото, або надписом.',
+		goods: puzzleGoods,
 	},
 ]

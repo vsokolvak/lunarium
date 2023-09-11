@@ -1,0 +1,52 @@
+@use '../../sass/mixin.scss' as mix;
+@use '../../sass/variable.scss' as var;
+
+.goodsWrapper {
+	@include mix.flex();
+	flex-direction: column;
+	width: 100%;
+	justify-content: start;
+	border-radius: 15px;
+	border: 1px solid white;
+	overflow: hidden;
+}
+
+.goods {
+	@include mix.flex();
+	padding: 10px;
+	justify-content: start;
+
+	img {
+		width: 30%;
+		border-radius: 10px;
+	}
+
+	p {
+		font-size: var.$size-small;
+		color: black;
+		padding: 10px;
+
+	}
+
+	span {
+		font-size: var.$size-large;
+		color: black;
+		width: 100%;
+		padding: 10px;
+	}
+}
+
+.goodsInfo {
+	@include mix.flex();
+	flex-direction: column;
+	align-self: start;
+	padding: 10px;
+	padding-top: 0;
+	align-items: start;
+
+	p {
+		color: white;
+		font-size: var.$size-large;
+		padding-top: 0;
+	}
+}

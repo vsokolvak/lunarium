@@ -1,7 +1,7 @@
 import classes from './Logo.module.scss'
 import logo from '../../../img/Logo/logo.webp'
 import serchIcon from '../../../img/search/search.svg'
-import goodsIcon from '../../../img/search/goods.svg'
+import Basket from './Basket/Index'
 
 const Logo = props => {
 	return <div className={classes.LogoWrapper}>
@@ -17,7 +17,7 @@ const Logo = props => {
 				<input type="text"></input>
 				<button> <img src={serchIcon} alt="serchIcon" /> </button>
 			</div>
-			<span> <img src={goodsIcon} alt="goodsIcon" /> </span>
+			<Basket />
 		</div>
 	</div>
 }

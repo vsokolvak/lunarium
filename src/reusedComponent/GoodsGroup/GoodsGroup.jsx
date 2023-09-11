@@ -1,11 +1,17 @@
+import { useDispatch } from 'react-redux'
 import classes from './GoodsGroup.module.scss'
+import { addGoods } from '../../redux/reducers/basket'
 
-const GoodsGroup = props => {
+const GoodsGroup = ({ goodsGroup }) => {
 
-	const tovarList = props.goodsGroup.map(el => {
+	const dispatch = useDispatch()
+
+	const tovarList = goodsGroup.map(el => {
+		const addGoodsBasket = () => dispatch(addGoods({...el, count: 1}))
+
 		return <div className={classes.goods} key={el.name}>
 			<img src={el.img} alt={el.name} />
-			<button>Купити</button>
+			<button type='button' onClick={addGoodsBasket} >Додати в корзину</button>
 			<p>
 				{el.description}
 			</p>

@@ -1,7 +1,7 @@
 import classes from './GodsCard.module.scss'
 import img1 from '../../img/recomendation/img1.webp'
 
-const GodsCard = props => {
+const GodsCard = ({}) => {
 	return <div className={classes.wrapper}>
 
 		<div className={classes.itemList}>

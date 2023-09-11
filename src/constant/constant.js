@@ -43,6 +43,10 @@ export const menulist = [
 		name: 'Доставка та оплата',
 		href: 'dev&pay'
 	},
+	{
+		name: 'Корзина',
+		href: 'basket'
+	},
 ]
 
 export const tovarlist = [
