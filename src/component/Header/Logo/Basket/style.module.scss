@@ -80,3 +80,36 @@
 	padding: 20px;
 	gap: 10px;
 }
+
+.goodsPurchase {
+	padding: 20px;
+	@include mix.flex();
+	flex-direction: column;
+	gap: 10px;
+
+	.goodsPurchasePrice{
+		@include mix.flex();
+		justify-content: space-between;
+		gap: 20px;
+
+		p {
+			color: white;
+			font-size: var.$size-large;
+			padding-top: 0;
+		}
+	}
+
+	button {
+		width: 100%;
+		padding: 10px;
+		border-radius: 10px;
+		background-color: var.$violet;
+		color: white;
+		font-size: var.$size-large;
+		transition: all 0.2s ease-in;
+
+		&:hover {
+			font-size: calc(var.$size-large + 3px);
+		}
+	}
+}

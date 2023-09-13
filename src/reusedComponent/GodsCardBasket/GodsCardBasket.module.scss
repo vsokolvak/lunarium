@@ -36,6 +36,12 @@
 	}
 }
 
+.godsListWrapper {
+	@include mix.flex();
+	flex-direction: column;
+	gap: 10px;
+}
+
 .goodsInfo {
 	@include mix.flex();
 	flex-direction: column;
@@ -48,5 +54,25 @@
 		color: white;
 		font-size: var.$size-large;
 		padding-top: 0;
+	}
+
+	.goodsCount {
+		@include mix.flex();
+		gap: 10px;
+
+		button {
+			@include mix.flex();
+			width: 35px;
+			height: 35px;
+			color: var.$blue-dark;
+			font-size: 35px;
+			border-radius: 15%;
+			transition: all 0.1s ease;
+			line-height: 35px;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
 	}
 }

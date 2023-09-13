@@ -28,6 +28,11 @@ const Basket = props => {
 
 // компонента корзини з товарами
 const BasketGoods = ({ showBasket, goodsGroup }) => {
+
+	{/* змінна прайс, сума замовлення */ }
+	let price = 0
+	for (let key in goodsGroup) { price += (goodsGroup[key].price * goodsGroup[key].count)}
+
 	return <div className={classes.basketGoodsWrapper}>
 
 		{/* блок бекграунда, прозорий */}
@@ -43,6 +48,17 @@ const BasketGoods = ({ showBasket, goodsGroup }) => {
 
 			<div className={classes.goodsList}>
 				<GodsCardBasket goodsGroup={goodsGroup} />
+			</div>
+
+			{/* блок оформлення заказу */}
+
+			<div className={classes.goodsPurchase}>
+				<div className={classes.goodsPurchasePrice}>
+					<p>до оплати без доставки</p>
+					<p> {price} грн</p>
+				</div>
+				<button type='button'>Оформити замовлення</button>
+
 			</div>
 
 		</div>

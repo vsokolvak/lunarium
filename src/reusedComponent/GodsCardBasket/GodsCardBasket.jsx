@@ -1,26 +1,40 @@
 import { useDispatch } from 'react-redux'
 import classes from './GodsCardBasket.module.scss'
+import { goodsChangeCount } from '../../redux/reducers/basket'
 
 const GodsCardBasket = ({ goodsGroup }) => {
 
 	const dispatch = useDispatch()
 
-	const godsList = goodsGroup.map(el => {
-		return <div className={classes.goodsWrapper} key={el.name}>
+	const godsList = []
+
+
+	for (let keys in goodsGroup) {
+
+		const countUp = () => dispatch(goodsChangeCount({ name: goodsGroup[keys].name , count: 1}))
+		const countDown = () => dispatch(goodsChangeCount({ name: goodsGroup[keys].name , count: -1}))
+
+		godsList.push(<div className={classes.goodsWrapper} key={goodsGroup[keys].name}>
 			<div className={classes.goods}>
-				<img src={el.img} alt={el.name} />
+				<img src={goodsGroup[keys].img} alt={goodsGroup[keys].name} />
 				<div className={classes.goodsInfo}>
 					<p>
-						{el.description}
+						{goodsGroup[keys].description}
 					</p>
 					<p>
-						ціна {el.price} / шт
+						ціна {goodsGroup[keys].price * goodsGroup[keys].count} грн / {goodsGroup[keys].count} шт
 					</p>
+					<div className={classes.goodsCount}>
+						<button type='button' onClick={countDown}>-</button>
+						<p>{goodsGroup[keys].count}</p>
+						<button type='button' onClick={countUp}>+</button>
+					</div>
 				</div>
 			</div>
-	</div>})
+		</div>)
+	}
 
-	return <div> {godsList} </div>
+	return <div className={classes.godsListWrapper}> {godsList} </div>
 	
 }
 
