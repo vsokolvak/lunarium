@@ -1,10 +1,20 @@
 import { useDispatch } from 'react-redux'
 import classes from './GodsCardBasket.module.scss'
-import { goodsChangeCount } from '../../redux/reducers/basket'
+import { 
+	goodsChangeCount, 
+	goodsDelete, 
+	goodsGetFromLocalstorage 
+} from '../../redux/reducers/basket'
+import iconDelete from '../../img/icon/delete.png'
+import { useEffect } from 'react'
 
 const GodsCardBasket = ({ goodsGroup }) => {
 
 	const dispatch = useDispatch()
+
+	useEffect(() => {
+		dispatch(goodsGetFromLocalstorage())
+	}, []);
 
 	const godsList = []
 
@@ -13,6 +23,8 @@ const GodsCardBasket = ({ goodsGroup }) => {
 
 		const countUp = () => dispatch(goodsChangeCount({ name: goodsGroup[keys].name , count: 1}))
 		const countDown = () => dispatch(goodsChangeCount({ name: goodsGroup[keys].name , count: -1}))
+		const deleteItem = () => dispatch(goodsDelete({ name: goodsGroup[keys].name}))
+
 
 		godsList.push(<div className={classes.goodsWrapper} key={goodsGroup[keys].name}>
 			<div className={classes.goods}>
@@ -28,6 +40,7 @@ const GodsCardBasket = ({ goodsGroup }) => {
 						<button type='button' onClick={countDown}>-</button>
 						<p>{goodsGroup[keys].count}</p>
 						<button type='button' onClick={countUp}>+</button>
+						<img src={iconDelete} alt="delete" onClick={ deleteItem } />
 					</div>
 				</div>
 			</div>
