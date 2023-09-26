@@ -42,7 +42,6 @@ const MainRight = props => {
 			<Route path='/about' element={<About />} />
 			<Route path='/contact' element={<Contact />} />
 			<Route path='/dev&pay' element={<DevPay />} />
-			<Route path='/basket' element={<Basket />} />
 		</Routes>
 
 	</div>

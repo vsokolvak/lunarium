@@ -14,11 +14,19 @@ const Basket = props => {
 	const showBasket = () => { setDisplayBasket(!displayBasket) }
 
 	const goodsGroup = useSelector(state => state.basket)
+	
+	{/* змінна godsCount - кількість товарів в корзині */}
+	let godsCount = 0
+	for (let key in goodsGroup) {godsCount += goodsGroup[key].count}
 
 	return <div className={classes.wrapper}>
 		{/* іконка корзини */}
 		<div className={classes.logo} onClick={showBasket}> 
 			<img src={basketIcon} alt="basketIcon" /> 
+			
+			{/* якщо є товари в корзині показуємо іконку з кількістю товарів */}
+			{godsCount?<span className={classes.godsInBasket}> {godsCount} </span>:''}
+			
 		</div>
 
 		{/* блок з товарами, позиція фіксет */}

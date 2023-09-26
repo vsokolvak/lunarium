@@ -4,6 +4,7 @@ import serchIcon from '../../../img/search/search.svg'
 import Basket from './Basket/Index'
 
 const Logo = props => {
+	
 	return <div className={classes.LogoWrapper}>
 		{/* логотип */}
 		<div className={classes.logo}>
