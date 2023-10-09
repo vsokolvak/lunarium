@@ -1,10 +1,12 @@
-import Header from './component/Header/Header';
+import Header from './component/Header/Header'
 import classes from './app.module.scss'
 import './sass/DefoultStyle.css'
-import Main from './component/Main/Main';
-import Footer from './component/Footer/Footer';
-import { Route, Routes } from 'react-router-dom'
-import Order from './component/Order/Index';
+import Main from './component/Main/Main'
+import Footer from './component/Footer/Footer'
+import {Route, Routes} from 'react-router-dom'
+import Order from "./component/Order/Index.tsx";
+import React from 'react';
+
 
 function App() {
   return (
