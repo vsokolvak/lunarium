@@ -4,8 +4,20 @@ import hotWithYou from './img/hotWithYou.webp'
 import ukraine from './img/ukraine.webp'
 import iForevaYou from './img/iForevaYou.webp'
 import adoreYou from './img/adoreYou.webp'
+import sportwear from './img/sportwear.jpg'
+import sportwearVideo from './video/sportwear.mp4'
 
 export const hameleonGoods = [
+	
+	// 'sportwear'
+	{
+		name: 'sportwear',
+		img: sportwear,
+		video: sportwearVideo,
+		description: 'Чашка хамелеон "спортивні вправи"',
+		price: 325
+	},
+	
 	// 'thankYouMe'
 	{
 		name: 'thankYouMe',
@@ -13,6 +25,7 @@ export const hameleonGoods = [
 		description: 'Чашка хамелеон синя "Дякую, що у мене є ти" для коханої людини',
 		price: 325
 	},
+	
 	// 'rikMorti'
 	{
 		name: 'rikMorti',

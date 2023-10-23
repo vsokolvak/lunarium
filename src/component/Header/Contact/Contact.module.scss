@@ -3,7 +3,7 @@
 
 .contact {
 	@include mix.flex();
-	justify-content: start;
+	justify-content: space-around;
 	height: 30px;
 	margin: 0 auto 0;
 	gap: 10px;

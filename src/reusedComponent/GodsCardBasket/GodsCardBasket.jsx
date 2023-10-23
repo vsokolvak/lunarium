@@ -1,12 +1,8 @@
-import { useDispatch } from 'react-redux'
+import {useDispatch} from 'react-redux'
 import classes from './GodsCardBasket.module.scss'
-import { 
-	goodsChangeCount, 
-	goodsDelete, 
-	goodsGetFromLocalstorage 
-} from '../../redux/reducers/basket'
+import {goodsChangeCount, goodsDelete, goodsGetFromLocalstorage} from '../../redux/reducers/basket'
 import iconDelete from '../../img/icon/delete.png'
-import { useEffect } from 'react'
+import React, {useEffect} from 'react'
 
 const GodsCardBasket = ({ goodsGroup }) => {
 

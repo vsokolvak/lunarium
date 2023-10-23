@@ -1,51 +1,130 @@
-import thankYouMe from './img/thankYouMe.webp'
-import rikMorti from './img/rikMorti.webp'
-import hotWithYou from './img/hotWithYou.webp'
-import ukraine from './img/ukraine.webp'
-import iForevaYou from './img/iForevaYou.webp'
-import adoreYou from './img/adoreYou.webp'
+import weAreFromUkraine from './img/weAreFromUkraine.webp'
+import everyHaveAPlan from './img/everyHaveAPlan.webp'
+import baptizedIra from './img/baptizedIra.webp'
+import bestGodfather from './img/bestGodfather.webp'
+import kingAreBornInMay from './img/kingAreBornInMay.webp'
+import daddyNotDrink from './img/daddyNotDrink.webp'
+import grandFatherandmother from './img/grandFatherandmother.webp'
+import giveMeDrink from './img/giveMeDrink.webp'
+import bestDaddy from './img/bestDaddy.webp'
+import daddyAllRight from './img/daddyAllRight.webp'
+import bestDaddy2 from './img/bestDaddy2.webp'
+import glassUkranian from './img/glassUkranian.webp'
+import sashaDontTouch from './img/sashaDontTouch.webp'
+import beerZavr from './img/beerZavr.webp'
+import allRightUkranian from './img/allRightUkranian.webp'
 
 export const beerGlassGoods = [
-	// 'thankYouMe'
+	// 'weAreFromUkraine'
 	{
-		name: 'thankYouMe',
-		img: thankYouMe,
-		description: 'Чашка хамелеон синя "Дякую, що у мене є ти" для коханої людини',
-		price: 325
+		name: 'weAreFromUkraine',
+		img: weAreFromUkraine,
+		description: 'Бокал, Ми з України',
+		price: 395
 	},
-	// 'rikMorti'
+	
+	// 'everyHaveAPlan'
 	{
-		name: 'rikMorti',
-		img: rikMorti,
-		description: 'Чашка хамелеон чорна "Рік і морті"',
-		price: 325
+		name: 'everyHaveAPlan',
+		img: everyHaveAPlan,
+		description: 'Бокал, все йде за планом',
+		price: 395
 	},
-	// 'hotWithYou'
+	
+	// 'baptizedIra'
 	{
-		name: 'hotWithYou',
-		img: hotWithYou,
-		description: 'Чашка хамелеон " Тепло там, де ти " з принтом',
-		price: 325
+		name: 'baptizedIra',
+		img: baptizedIra,
+		description: 'Бокал, найкращій хрещеній Ірі',
+		price: 395
 	},
-	// 'ukraine'
+	
+	// 'bestGodfather'
 	{
-		name: 'ukraine',
-		img: ukraine,
-		description: 'Чашка хамелеон "Ukraine" з принтом',
-		price: 325
+		name: 'bestGodfather',
+		img: bestGodfather,
+		description: 'Бокал, найкращий у світі кум',
+		price: 395
 	},
-	// 'iForevaYou'
+	
+	// 'kingAreBornInMay'
 	{
-		name: 'iForevaYou',
-		img: iForevaYou,
-		description: 'Чашка хамелеон чорна " Я завжди поруч " для коханої людиним',
-		price: 325
+		name: 'kingAreBornInMay',
+		img: kingAreBornInMay,
+		description: 'Бокал, королі народжуються в травні',
+		price: 395
 	},
-	// 'adoreYou'
+	
+	// 'grandFatherandmother'
 	{
-		name: 'adoreYou',
-		img: adoreYou,
-		description: 'Чашка хамелеон "Обожнюю тебе" з принтом',
-		price: 325
+		name: 'grandFatherandmother',
+		img: grandFatherandmother,
+		description: 'Бокал, только лучших мам повишают до бабушек, только лучших пап поввишают до дедушек',
+		price: 395
 	},
+	
+	// 'giveMeDrink'
+	{
+		name: 'giveMeDrink',
+		img: giveMeDrink,
+		description: 'Бокал, позови меня  запой',
+		price: 395
+	},
+	
+	// 'bestDaddy'
+	{
+		name: 'bestDaddy',
+		img: bestDaddy,
+		description: 'Бокал, його величність тато, найкращий у світі',
+		price: 395
+	},
+	
+	// 'daddyAllRight'
+	{
+		name: 'daddyAllRight',
+		img: daddyAllRight,
+		description: 'Бокал, тато завжди правий',
+		price: 395
+	},
+	
+	// 'bestDaddy2'
+	{
+		name: 'bestDaddy2',
+		img: bestDaddy2,
+		description: 'Бокал, найкращий тато у світі',
+		price: 395
+	},
+	
+	// 'glassUkranian'
+	{
+		name: 'glassUkranian',
+		img: glassUkranian,
+		description: 'Бокал, келих справжнього українця',
+		price: 395
+	},
+	
+	// 'sashaDontTouch'
+	{
+		name: 'sashaDontTouch',
+		img: sashaDontTouch,
+		description: 'Бокал, Сашка не чіпати, він зайнятий',
+		price: 395
+	},
+	
+	// 'beerZavr'
+	{
+		name: 'beerZavr',
+		img: beerZavr,
+		description: 'Бокал, пивозавр, пінний період',
+		price: 395
+	},
+	
+	// 'allRightUkranian'
+	{
+		name: 'allRightUkranian',
+		img: allRightUkranian,
+		description: 'Бокал, все буде Україна',
+		price: 395
+	},
+	
 ]

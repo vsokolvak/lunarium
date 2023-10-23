@@ -1,9 +1,8 @@
-import classes from './Header.module.scss'
-import { contact } from '../../constant/constant'
 import Contact from './Contact/Contact'
 import Logo from './Logo/Logo'
+import React from 'react';
 
-const Header = props => {
+const Header = () => {
 	return <div >
 		{/* блок контактів */}
 		<Contact />

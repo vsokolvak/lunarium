@@ -3,6 +3,7 @@ import arrow from '../../../img/icon/arrow.svg'
 import Response from './Response/Response'
 import GodsCard from '../../../reusedComponent/GodsCard/GodsCard'
 import Working from './Working/Working'
+import React from 'react';
 
 const MainLeft = props => {
 	return <div className={classes.wrapper}>

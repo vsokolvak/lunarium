@@ -1,6 +1,7 @@
 import classes from './Basket.module.scss'
-import { useSelector } from 'react-redux'
+import {useSelector} from 'react-redux'
 import GodsCardBasket from '../../../../reusedComponent/GodsCardBasket/GodsCardBasket'
+import React from 'react';
 
 // жсх розмітка
 const Basket = ({}) => {

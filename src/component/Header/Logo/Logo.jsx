@@ -2,6 +2,7 @@ import classes from './Logo.module.scss'
 import logo from '../../../img/Logo/logo.webp'
 import serchIcon from '../../../img/search/search.svg'
 import Basket from './Basket/Index'
+import React from 'react';
 
 const Logo = props => {
 	
@@ -15,7 +16,7 @@ const Logo = props => {
 		{/* поле пошуку + корзина */}
 		<div className={classes.search}>
 			<div className={classes.searchInput}>
-				<input type="text"></input>
+				<input type="text" />
 				<button> <img src={serchIcon} alt="serchIcon" /> </button>
 			</div>
 			<Basket />

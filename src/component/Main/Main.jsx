@@ -1,8 +1,9 @@
 import MainLeft from './MainLeft/MainLeft'
 import MainRight from './MainRight/MainRight'
 import classes from './Main.module.scss'
+import React from 'react';
 
-const Main = props => {
+const Main = () => {
 	return <div className={classes.main}>
 		<div className={classes.left}>
 			{/* колонка зліва */}

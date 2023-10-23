@@ -1,5 +1,6 @@
 import classes from './GodsCard.module.scss'
 import img1 from '../../img/recomendation/img1.webp'
+import React from 'react';
 
 const GodsCardContainer = ({}) => {
 	return <div className={classes.wrapper}>

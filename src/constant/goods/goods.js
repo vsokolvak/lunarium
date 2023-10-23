@@ -9,6 +9,8 @@ import ironCup from '../../img/goods/grup/ironCup.webp'
 import giftBox from '../../img/goods/grup/giftBox.webp'
 import beerGlass from '../../img/goods/grup/beerGlass.webp'
 import puzzle from '../../img/goods/grup/puzzle.webp'
+import dishes from '../../img/goods/grup/dishes.webp'
+import aprons from '../../img/goods/grup/aprons.webp'
 
 import { hameleonGoods } from './goodsGroup/hameleonGoods/hameleonGoods'
 import { cupGoods } from './goodsGroup/cupGoods/cupGoods'
@@ -21,6 +23,8 @@ import { giftBoxGoods } from './goodsGroup/giftBoxGoods/giftBoxGoods'
 import { ironCupGoods } from './goodsGroup/ironCupGoods/ironCupGoods'
 import { beerGlassGoods } from './goodsGroup/beerGlassGoods/beerGlassGoods'
 import { puzzleGoods } from './goodsGroup/puzzleGoods/puzzleGoods'
+import { dishesGoods } from './goodsGroup/dishesGoods/dishesGoods.js'
+import { apronsGoods } from './goodsGroup/apronsGoods/apronsGoods.js'
 
 export const goods = [
 	// 'Чашки хамелеон'
@@ -110,5 +114,28 @@ export const goods = [
 		path: 'puzzle',
 		description: 'Пазли. З вашим фото, або надписом.',
 		goods: puzzleGoods,
+	},
+	
+	// Посуд
+	{
+		name: 'Посуд',
+		img: dishes,
+		path: 'dishes',
+		description: 'Керамічний посуд - це вічна класика, '
+		+'яка завжди буде чудовим доповненням на кухні '
+		+'та подарунком для друзів, другої половинки та рідних. ' 
+		+'Зробимо з любим принтом та надписом за Вашим бажанням !',
+		goods: dishesGoods,
+	},
+	
+	// Фартухи
+	{
+		name: 'Фартухи',
+		img: aprons,
+		path: 'aprons',
+		description: 'Фартухи з принтом - це не тільки про креативність, '
+		+' а й про комфорт та впевненість.Саржеві зручні фартухи, '
+		+' як для чоловіків так і для жінок в любій сфері діяльності ',
+		goods: apronsGoods,
 	},
 ]

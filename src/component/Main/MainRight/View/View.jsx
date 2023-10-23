@@ -1,5 +1,6 @@
 import GodsCard from '../../../../reusedComponent/GodsCard/GodsCard'
 import classes from './View.module.scss'
+import React from 'react';
 
 // жсх розмітка
 const View = props => {

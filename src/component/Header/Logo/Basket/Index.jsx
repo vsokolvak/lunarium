@@ -1,9 +1,10 @@
 import classes from './style.module.scss'
 import basketIcon from '../../../../img/search/goods.svg'
-import { useState } from 'react'
+import React, {useState} from 'react'
 import close from '../../../../img/icon/iconClose.png'
 import GodsCardBasket from '../../../../reusedComponent/GodsCardBasket/GodsCardBasket'
-import { useSelector } from 'react-redux'
+import {useSelector} from 'react-redux'
+import {NavLink} from "react-router-dom";
 
 const Basket = props => {
 
@@ -65,7 +66,9 @@ const BasketGoods = ({ showBasket, goodsGroup }) => {
 					<p>до оплати без доставки</p>
 					<p> {price} грн</p>
 				</div>
-				<button type='button'>Оформити замовлення</button>
+				<button type='button'>
+					<NavLink  to={'order'}> Оформити замовлення </NavLink>
+				</button>
 
 			</div>
 

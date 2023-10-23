@@ -1,4 +1,5 @@
 import classes from './Company.module.scss'
+import React from 'react';
 
 // жсх розмітка
 const Company = props => {

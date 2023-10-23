@@ -1,4 +1,5 @@
 import classes from './About.module.scss'
+import React from 'react';
 
 // жсх розмітка
 const About = props => {

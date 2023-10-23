@@ -1,5 +1,6 @@
 import classes from './Contact.module.scss'
-import { contact } from '../../../constant/constant'
+import {contact} from '../../../constant/constant'
+import React from 'react';
 
 const Contact = props => {
 	return <div>

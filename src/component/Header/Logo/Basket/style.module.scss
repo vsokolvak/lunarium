@@ -132,15 +132,20 @@
 
 	button {
 		width: 100%;
-		padding: 10px;
 		border-radius: 10px;
 		background-color: var.$violet;
-		color: white;
-		font-size: var.$size-large;
-		transition: all 0.2s ease-in;
 
-		&:hover {
-			font-size: calc(var.$size-large + 3px);
+		a {
+			width: 100%;
+			padding: 10px;
+			color: white;
+			font-size: var.$size-large;
+			transition: all 0.2s ease-in;
+			display: block;
+
+			&:hover {
+				font-size: calc(var.$size-large + 3px);
+			}
 		}
 	}
 }

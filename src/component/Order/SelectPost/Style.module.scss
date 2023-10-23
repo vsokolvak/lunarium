@@ -45,47 +45,38 @@
 	gap: 5px;
 	width: 100%;
 	position: relative;
+}
 
-	label {
-		align-self: start;
-		font-size: var.$size-small;
+.formFieldLabel {
+	@include mix.flex;
+	gap: 20px;
+	padding: 20px;
+	width: 100%;
+	border-radius: 20px;
+	position: relative;
+
+	&:hover {
+		border: 2px dashed white;
 	}
 
 	input {
-		font-size: var.$size-small;
-		padding: 5px;
-		border: 1px solid white;
-		border-radius: 10px;
+		appearance: none;
 		width: 100%;
-		color: white;
-		background-color: var.$dark-violet;
-	}
+		height: 100%;
+		border-radius: 20px;
+		position: absolute;
+		top: 0;
+		left: 0;
 
-	select, option {
-		font-size: var.$size-small;
-		padding: 5px;
-		border: 1px solid white;
-		border-radius: 10px;
-		width: 100%;
-		color: white;
-		background-color: var.$dark-violet;
-	}
-
-	.load {
-		width: 20px;
-		height: 20px;
-		animation-name: loadRotate;
-		animation-duration: 2s;
-		animation-iteration-count: infinite;
-
-		@keyframes loadRotate {
-			0% {
-				transform: rotate(0deg);
-			}
-			100% {
-				transform: rotate(360deg);
-			}
+		&:checked {
+			border: 5px dashed var.$violet;
+			background-color: var.$violet;
 		}
+	}
+
+	span {
+		font-size: var.$size-large;
+		z-index: 10;
 	}
 }
 

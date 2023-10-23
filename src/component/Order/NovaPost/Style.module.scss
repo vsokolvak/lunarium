@@ -1,33 +1,5 @@
-@use '../../sass/mixin.scss' as mix;
-@use '../../sass/variable.scss' as var;
-
-.wraper {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	min-height: 100%;
-	background-color: var.$violet;
-	padding: 20px;
-}
-
-.content {
-	@include mix.flex();
-	flex-direction: column;
-	gap: 20px;
-	width: 60%;
-	background-color: var.$blue-dark;
-	color: white;
-	margin: auto;
-	padding: 20px;
-	border-radius: 20px;
-	overflow: hidden;
-
-	h3 {
-		font-size: var.$size-medium;
-
-	}
-}
+@use '../../../sass/mixin.scss' as mix;
+@use '../../../sass/variable.scss' as var;
 
 .contactData {
 	@include mix.flex;
@@ -69,8 +41,10 @@
 
 .formField {
 	@include mix.flex;
-	flex-direction: column;gap: 5px;
+	flex-direction: column;
+	gap: 5px;
 	width: 100%;
+	position: relative;
 
 	label {
 		align-self: start;
@@ -86,6 +60,41 @@
 		color: white;
 		background-color: var.$dark-violet;
 	}
+
+	select, option {
+		font-size: var.$size-small;
+		padding: 5px;
+		border: 1px solid white;
+		border-radius: 10px;
+		width: 100%;
+		color: white;
+		background-color: var.$dark-violet;
+	}
+}
+
+.load {
+		width: 30px;
+		height: 30px;
+		animation-name: loadRotate;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		background-color: white;
+		border-radius: 50%;
+
+		@keyframes loadRotate {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	}
+
+.formFieldNav {
+	@include mix.flex;
+	gap: 5px;
+	width: 100%;
 
 	button {
 		padding: 5px;

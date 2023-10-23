@@ -20,7 +20,7 @@
 	@include mix.flex();
 	width: 100%;
 	gap: 20px;
-	justify-content: start;
+	flex-wrap: wrap;
 }
 
 

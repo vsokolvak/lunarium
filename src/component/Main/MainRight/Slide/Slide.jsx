@@ -1,9 +1,8 @@
 import classes from './Slide.module.scss'
 import img1 from '../../../../img/slide/slide1.webp'
 import img2 from '../../../../img/slide/slide2.webp'
-import img3 from '../../../../img/slide/slide3.webp'
 import img4 from '../../../../img/slide/slide4.webp'
-import { useEffect, useRef, useState } from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 
 // жсх розмітка
 const Slide = props => {

@@ -1,4 +1,5 @@
 import classes from './DevPay.module.scss'
+import React from 'react';
 
 // жсх розмітка
 const DevPay = props => {

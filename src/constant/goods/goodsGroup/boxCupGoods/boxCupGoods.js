@@ -1,51 +1,87 @@
-import thankYouMe from './img/thankYouMe.webp'
-import rikMorti from './img/rikMorti.webp'
-import hotWithYou from './img/hotWithYou.webp'
-import ukraine from './img/ukraine.webp'
-import iForevaYou from './img/iForevaYou.webp'
-import adoreYou from './img/adoreYou.webp'
+import heart from './img/heart.webp'
+import dizaine from './img/dizaine.webp'
+import cupBlue from './img/cupBlue.webp'
+import cupGrey from './img/cupGrey.webp'
+import heart2 from './img/heart2.webp'
+import cubBrawn from './img/cubBrawn.webp'
+import cupPink from './img/cupPink.webp'
+import cupRed from './img/cupRed.webp'
+import cupCrem from './img/cupCrem.webp'
+
+const price = 95
 
 export const boxCupGoods = [
-	// 'thankYouMe'
+	// 'heart'
 	{
-		name: 'thankYouMe',
-		img: thankYouMe,
-		description: 'Чашка хамелеон синя "Дякую, що у мене є ти" для коханої людини',
-		price: 325
+		name: 'heart',
+		img: heart,
+		description: 'Подарункова коробочка, Дерев"яне серце',
+		price: price
 	},
-	// 'rikMorti'
+	
+	// 'dizaine'
 	{
-		name: 'rikMorti',
-		img: rikMorti,
-		description: 'Чашка хамелеон чорна "Рік і морті"',
-		price: 325
+		name: 'dizaine',
+		img: dizaine,
+		description: 'Подарункова коробочка, Дерев"яна з вашим дизайном',
+		price: price
 	},
-	// 'hotWithYou'
+	
+	// 'cupBlue'
 	{
-		name: 'hotWithYou',
-		img: hotWithYou,
-		description: 'Чашка хамелеон " Тепло там, де ти " з принтом',
-		price: 325
+		name: 'cupBlue',
+		img: cupBlue,
+		description: 'Подарункова коробочка, Для чашки, блакитна',
+		price: 50
 	},
-	// 'ukraine'
+	
+	// 'cupGrey'
 	{
-		name: 'ukraine',
-		img: ukraine,
-		description: 'Чашка хамелеон "Ukraine" з принтом',
-		price: 325
+		name: 'cupGrey',
+		img: cupGrey,
+		description: 'Подарункова коробочка, Для чашки сіра',
+		price: 50
 	},
-	// 'iForevaYou'
+	
+	// 'heart2'
 	{
-		name: 'iForevaYou',
-		img: iForevaYou,
-		description: 'Чашка хамелеон чорна " Я завжди поруч " для коханої людиним',
-		price: 325
+		name: 'heart2',
+		img: heart2,
+		description: 'Подарункова коробочка, Дерев"яна, сердечка',
+		price: 160
 	},
-	// 'adoreYou'
+	
+	// 'cubBrawn'
 	{
-		name: 'adoreYou',
-		img: adoreYou,
-		description: 'Чашка хамелеон "Обожнюю тебе" з принтом',
-		price: 325
+		name: 'cubBrawn',
+		img: cubBrawn,
+		description: 'Подарункова коробочка, Для чашки, коричнева',
+		price: 50
 	},
+	
+	// 'cupPink'
+	{
+		name: 'cupPink',
+		img: cupPink,
+		description: 'Подарункова коробочка, Для чашки, рожева',
+		price: 50
+	},
+	
+	// 'cupRed'
+	{
+		name: 'cupRed',
+		img: cupRed,
+		description: 'Подарункова коробочка, Для чашки, червона',
+		price: 50
+	},
+	
+	// 'cupCrem'
+	{
+		name: 'cupCrem',
+		img: cupCrem,
+		description: 'Подарункова коробочка, Для чашки, кремова',
+		price: price
+	},
+	
+	
 ]

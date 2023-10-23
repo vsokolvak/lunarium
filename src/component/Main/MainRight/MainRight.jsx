@@ -1,16 +1,16 @@
 import Company from './Company/Company'
 import Goods from './Goods/Goods'
 import classes from './MainRight.module.scss'
-import Menu from './Menu/Menu'
+import Menu from './Menu/Menu.tsx'
 import Slide from './Slide/Slide'
 import View from './View/View'
-import { Route, Routes } from 'react-router-dom'
-import { goods } from '../../../constant/goods/goods'
+import {Route, Routes} from 'react-router-dom'
+import {goods} from '../../../constant/goods/goods'
 import GoodsGroup from '../../../reusedComponent/GoodsGroup/GoodsGroup'
 import About from './About/About'
 import Contact from './Contact/Contact'
 import DevPay from './DevPay/DevPay'
-import Basket from './Basket/Basket'
+import React from 'react';
 
 const MainRight = props => {
 
@@ -27,7 +27,9 @@ const MainRight = props => {
  
 	// масив роутів, який відображує карточки товарів вибраної групи
 	const goodsElement = goods.map(el => {
-		return <Route path={`/${el.path}`} element={<GoodsGroup goodsGroup={el.goods} />} />
+		return <Route path={`/goods&service/${el.path}`} 
+		element={<GoodsGroup goodsGroup={el.goods} 
+		goodsInfo={el} />} />
 	})
 
 

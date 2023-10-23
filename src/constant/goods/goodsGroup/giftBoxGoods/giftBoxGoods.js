@@ -1,51 +1,58 @@
-import thankYouMe from './img/thankYouMe.webp'
-import rikMorti from './img/rikMorti.webp'
-import hotWithYou from './img/hotWithYou.webp'
-import ukraine from './img/ukraine.webp'
-import iForevaYou from './img/iForevaYou.webp'
-import adoreYou from './img/adoreYou.webp'
+import kinderSurprise from './img/kinderSurprise.webp'
+import swittyBox from './img/swittyBox.webp'
+import giftBoxForMen from './img/giftBoxForMen.webp'
+import kinderSurprise2 from './img/kinderSurprise2.webp'
+import loveIS from './img/loveIS.webp'
+import thankDefender from './img/thankDefender.webp'
+
 
 export const giftBoxGoods = [
-	// 'thankYouMe'
+	// 'kinderSurprise'
 	{
-		name: 'thankYouMe',
-		img: thankYouMe,
-		description: 'Чашка хамелеон синя "Дякую, що у мене є ти" для коханої людини',
-		price: 325
+		name: 'kinderSurprise',
+		img: kinderSurprise,
+		description: 'Великий подарунковий бокс kinder surprise',
+		price: 1350
 	},
-	// 'rikMorti'
+	
+	// 'swittyBox'
 	{
-		name: 'rikMorti',
-		img: rikMorti,
-		description: 'Чашка хамелеон чорна "Рік і морті"',
-		price: 325
+		name: 'swittyBox',
+		img: swittyBox,
+		description: 'Солодкий подарунковий бокс для дівчини',
+		price: 850
 	},
-	// 'hotWithYou'
+	
+	// 'giftBoxForMen'
 	{
-		name: 'hotWithYou',
-		img: hotWithYou,
-		description: 'Чашка хамелеон " Тепло там, де ти " з принтом',
-		price: 325
+		name: 'giftBoxForMen',
+		img: giftBoxForMen,
+		description: 'Подарунковий бокс, яким ти точно його здивуєш',
+		price: 850
 	},
-	// 'ukraine'
+	
+	// 'kinderSurprise2'
 	{
-		name: 'ukraine',
-		img: ukraine,
-		description: 'Чашка хамелеон "Ukraine" з принтом',
-		price: 325
+		name: 'kinderSurprise2',
+		img: kinderSurprise2,
+		description: 'Подарунковий бокс kinder surprise',
+		price: 1350
 	},
-	// 'iForevaYou'
+	
+	// 'loveIS'
 	{
-		name: 'iForevaYou',
-		img: iForevaYou,
-		description: 'Чашка хамелеон чорна " Я завжди поруч " для коханої людиним',
-		price: 325
+		name: 'loveIS',
+		img: loveIS,
+		description: 'Подарунковий бокс love IS',
+		price: 1350
 	},
-	// 'adoreYou'
+	
+	// 'thankDefender'
 	{
-		name: 'adoreYou',
-		img: adoreYou,
-		description: 'Чашка хамелеон "Обожнюю тебе" з принтом',
-		price: 325
+		name: 'thankDefender',
+		img: thankDefender,
+		description: 'Подарунковий бокс Дякую захисникові',
+		price: 950
 	},
+	
 ]

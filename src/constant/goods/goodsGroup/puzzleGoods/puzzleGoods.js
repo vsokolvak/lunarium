@@ -1,51 +1,56 @@
-import thankYouMe from './img/thankYouMe.webp'
-import rikMorti from './img/rikMorti.webp'
-import hotWithYou from './img/hotWithYou.webp'
-import ukraine from './img/ukraine.webp'
-import iForevaYou from './img/iForevaYou.webp'
-import adoreYou from './img/adoreYou.webp'
+import pazzle from './img/pazzle.webp'
+import pazl1 from './img/pazl1.jpg' 
+import pazl2 from './img/pazl2.jpg' 
+import pazl3 from './img/pazl3.jpg' 
+import pazl4 from './img/pazl4.jpg' 
+import pazl5 from './img/pazl5.jpg' 
 
 export const puzzleGoods = [
-	// 'thankYouMe'
+	// 'pazzle'
 	{
-		name: 'thankYouMe',
-		img: thankYouMe,
-		description: 'Чашка хамелеон синя "Дякую, що у мене є ти" для коханої людини',
+		name: 'pazzle',
+		img: pazzle,
+		description: 'Пазли з вашим фото, та дерев"яна коробочка з фото',
 		price: 325
 	},
-	// 'rikMorti'
+	
+	// 'pazl1'
 	{
-		name: 'rikMorti',
-		img: rikMorti,
-		description: 'Чашка хамелеон чорна "Рік і морті"',
+		name: 'pazl1',
+		img: pazl1,
+		description: 'Пазли з вашим фото, та дерев"яна коробочка з фото',
 		price: 325
 	},
-	// 'hotWithYou'
+	
+	// 'pazl2'
 	{
-		name: 'hotWithYou',
-		img: hotWithYou,
-		description: 'Чашка хамелеон " Тепло там, де ти " з принтом',
+		name: 'pazl2',
+		img: pazl2,
+		description: 'Пазли з вашим фото, та дерев"яна коробочка з фото',
 		price: 325
 	},
-	// 'ukraine'
+	
+	// 'pazl3'
 	{
-		name: 'ukraine',
-		img: ukraine,
-		description: 'Чашка хамелеон "Ukraine" з принтом',
+		name: 'pazl3',
+		img: pazl3,
+		description: 'Пазли з вашим фото, та дерев"яна коробочка з фото',
 		price: 325
 	},
-	// 'iForevaYou'
+	
+	// 'pazl4'
 	{
-		name: 'iForevaYou',
-		img: iForevaYou,
-		description: 'Чашка хамелеон чорна " Я завжди поруч " для коханої людиним',
+		name: 'pazl4',
+		img: pazl4,
+		description: 'Пазли з вашим фото, та дерев"яна коробочка з фото',
 		price: 325
 	},
-	// 'adoreYou'
+	
+	// 'pazl5'
 	{
-		name: 'adoreYou',
-		img: adoreYou,
-		description: 'Чашка хамелеон "Обожнюю тебе" з принтом',
+		name: 'pazl5',
+		img: pazl5,
+		description: 'Пазли з вашим фото, та дерев"яна коробочка з фото',
 		price: 325
 	},
 ]

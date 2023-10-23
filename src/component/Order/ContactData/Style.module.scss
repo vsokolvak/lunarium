@@ -1,33 +1,5 @@
-@use '../../sass/mixin.scss' as mix;
-@use '../../sass/variable.scss' as var;
-
-.wraper {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	min-height: 100%;
-	background-color: var.$violet;
-	padding: 20px;
-}
-
-.content {
-	@include mix.flex();
-	flex-direction: column;
-	gap: 20px;
-	width: 60%;
-	background-color: var.$blue-dark;
-	color: white;
-	margin: auto;
-	padding: 20px;
-	border-radius: 20px;
-	overflow: hidden;
-
-	h3 {
-		font-size: var.$size-medium;
-
-	}
-}
+@use '../../../sass/mixin.scss' as mix;
+@use '../../../sass/variable.scss' as var;
 
 .contactData {
 	@include mix.flex;

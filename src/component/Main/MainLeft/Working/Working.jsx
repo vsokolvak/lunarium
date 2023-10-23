@@ -1,4 +1,5 @@
 import classes from './Working.module.scss'
+import React from 'react';
 
 const Working = props => {
 	return <div className={classes.wrapper}>

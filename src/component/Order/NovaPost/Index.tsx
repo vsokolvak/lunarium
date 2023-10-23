@@ -1,51 +1,47 @@
 import classes from './Style.module.scss'
-import {SubmitHandler, useForm} from "react-hook-form"
+import React, {useState} from "react";
+import CityList from './CityList/index.tsx'
+import DepartList from './DepartList/index.tsx'
 
-const Order = () => {
+const NovaPost = ({ setTxtMessage, setactiveComponent }) => {
 
-	interface iContactForm {
-		firstName: string
-		lastName: string
-		tel: number
+	//змінна, чи показувати список відділень
+	let [showDepartList, setShowDepartList] = useState(false)
+	//змінна з рейкою міста, передається в відділення для запиту за ними
+	let [cityRef, setcityRef] = useState('')
+	//змінна, перевіряє, чи вибране відділення
+	let [selectedDepart, setSelectedDepart] = useState(false)
+	// повідомлення, коли відділення не вибрану
+	let [errorMessage, setErrorMessage] = useState('')
+	
+	//функція, яка приймає дані для запиту за відділеннями
+	const getDepart = (cityCurent) => {
+		setShowDepartList(true)
+		setcityRef(cityCurent)
 	}
 
-	const {register, handleSubmit} = useForm<iContactForm>({})
-
-	const contactDataFormSubmit:SubmitHandler<iContactForm> = (data) => {
-		alert(data.firstName + data.lastName + data.tel)
+	//функція повернення назад та вперед
+	const goBack = () => setactiveComponent(1)
+	const goNext = () => {
+		if (selectedDepart) setactiveComponent(4)
+		else setErrorMessage('виберіть відділенння')
 	}
+	
+	return <div className={classes.contactData}>
+		
+		<h4> Нова пошта </h4>
+		
+		< CityList setTxtMessage={setTxtMessage} getDepart={ getDepart } />
+		
+		{ !showDepartList || < DepartList setTxtMessage={setTxtMessage} 
+		cityRef={ cityRef } setSelectedDepart={setSelectedDepart} />}
 
-	return <div className={classes.wraper}>
-		<div className={classes.content}>
-			<h3> Оформлення замовлення </h3>
-			<div className={classes.contactData}>
-				<h4> Контактні дані </h4>
-				<form onSubmit={handleSubmit(contactDataFormSubmit)}>
-
-					<div className={classes.formField}>
-						<label htmlFor={'firstName'}>Ім'я</label>
-						<input {...register('firstName')} type='text' id={'firstName'}/>
-					</div>
-
-					<div className={classes.formField}>
-						<label htmlFor={'lastName'}>Прізвище</label>
-						<input {...register('lastName')} type='text' id={'lastName'}/>
-					</div>
-
-					<div className={classes.formField}>
-						<label htmlFor={'tel'}>Телефон</label>
-						<input {...register('tel')} type='tel' id={'tel'}/>
-					</div>
-
-					<div className={classes.formField}>
-						<button>Продовжити</button>
-					</div>
-				</form>
-			</div>
-
+		<span style={{color: 'red', padding: '10px'}}> {errorMessage} </span>
+		<div className={classes.formFieldNav}>
+			<button onClick={goBack}>Назад</button>
+			<button onClick={goNext}>Продовжити</button>
 		</div>
-		ORDER
 	</div>
 }
 
-export default Order
+export default NovaPost

@@ -1,6 +1,7 @@
 import classes from './Response.module.scss'
 import peopul from '../../../../img/icon/peoplWhite.png'
 import star from '../../../../img/icon/star.png'
+import React from 'react';
 
 const Response = props => {
 	return <div className={classes.wrapper}>
