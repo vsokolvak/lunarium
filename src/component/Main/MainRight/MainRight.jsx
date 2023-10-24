@@ -11,6 +11,7 @@ import About from './About/About'
 import Contact from './Contact/Contact'
 import DevPay from './DevPay/DevPay'
 import React from 'react';
+import GodsCard from './GodsCard'
 
 const MainRight = props => {
 
@@ -41,6 +42,7 @@ const MainRight = props => {
 			<Route path='/*' element={MainContent} />
 			{goodsElement}
 			<Route path='/goods&service' element={<Goods />} />
+			<Route path='/goods&service/:grup/:name' element={<GodsCard />} />
 			<Route path='/about' element={<About />} />
 			<Route path='/contact' element={<Contact />} />
 			<Route path='/dev&pay' element={<DevPay />} />
