@@ -15,7 +15,7 @@ const GoodsGroup = ({ goodsGroup, goodsInfo }) => {
 					{el.description}
 				</p>
 				<span>
-					{el.price}
+					ціна {el.price} грн
 				</span>
 			</NavLink>
 		</div>

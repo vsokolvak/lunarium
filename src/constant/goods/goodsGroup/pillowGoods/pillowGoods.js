@@ -19,7 +19,8 @@ import myEnot from './img/myEnot.webp'
 import sone from './img/sone.webp'
 import bestGoddaddy from './img/bestGoddaddy.webp'
 
-const price = 350
+const price = 390
+const price2 = 420
 
 export const pillowGoods = [
 	// 'LYDaddy'
@@ -34,8 +35,8 @@ export const pillowGoods = [
 	{
 		name: 'pillow',
 		img: pillow,
-		description: 'Подушка з принтом',
-		price: price
+		description: 'Подушка з двохстороннім принтом',
+		price: price2
 	},
 
 	// 'loveYou'
@@ -50,8 +51,8 @@ export const pillowGoods = [
 	{
 		name: 'pillow2',
 		img: pillow2,
-		description: 'Подушка з принтом',
-		price: price
+		description: 'Подушка з двохстороннім принтом',
+		price: price2
 	},
 
 	// 'loveYou2'
@@ -66,8 +67,8 @@ export const pillowGoods = [
 	{
 		name: 'loveYou3',
 		img: loveYou3,
-		description: 'Подушка "Кохаю тебе" з принтом',
-		price: price
+		description: 'Подушка "Кохаю тебе" з двохстороннім принтом',
+		price: price2
 	},
 
 	// 'forever'

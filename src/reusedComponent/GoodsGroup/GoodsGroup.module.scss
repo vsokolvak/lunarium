@@ -24,6 +24,16 @@
 	border: 1px solid var.$violet;
 	overflow: hidden;
 	position: relative;
+	
+	a {
+		width: 100%;
+		padding: 10px;
+		transition: all 0.3s ease-in;
+		
+		&:hover {
+			transform: scale(1.01);
+		}
+	}
 
 	img {
 		width: 100%;
@@ -38,11 +48,8 @@
 		background-color: var.$violet;
 		color: white;
 		font-size: var.$size-large;
-		transition: all 0.3s ease-in;
-
-		&:hover {
-			transform: scale(1.1);
-		}
+		padding: 10px;
+		border-radius: 10px;
 		
 		.buttonClick {
 			background-color: green;
