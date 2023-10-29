@@ -26,16 +26,16 @@ const MainLeft = props => {
 		</div>
 
 		{/* відгуки */}
-		<div className={classes.response}>
-			<h4>Останні відгуки</h4>
+		{/*<div className={classes.response}>
+		<h4>Останні відгуки</h4>
 
-			<div className={classes.responseList}>
-				<Response />
-				<Response />
-				<Response />
-			</div>
-			
+		<div className={classes.responseList}>
+			<Response />
+			<Response />
+			<Response />
 		</div>
+		
+		</div>*/}
 
 		<Working />
 		

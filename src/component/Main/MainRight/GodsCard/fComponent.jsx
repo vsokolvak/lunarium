@@ -1,5 +1,6 @@
 import classes from './styles.module.scss'
 import React, {useState} from 'react';
+import {Helmet} from "react-helmet";
 
 // жсх розмітка
 const FComponent = ({ gods, addGoodsBasket }) => {
@@ -22,10 +23,20 @@ const pressButton = () => {
 }
 	
 return <div className={classes.wrapper}>
+
+	<Helmet>
+
+		<title> { gods?.description || 'Лунаріум, товар'} </title>
+		<meta name="description" content="
+			Нанесення унікального надпису, або вашого фото, 
+			на різноманітні товари, чашки, подушки, пазли, термокружки,
+			посуд, термос.
+		"/>
+	</Helmet>
 	
 	{ !showSucses || sucsesElement }
 
-	<h3> {gods.description} </h3>
+	<h1> {gods.description} </h1>
 	
 	{gods.video?<video src={gods.video} controls={true} preload={'metadata'}/>
 	:<img src={gods.img} alt={gods.name} />}

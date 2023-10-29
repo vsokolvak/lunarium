@@ -1,14 +1,23 @@
 import classes from './Contact.module.scss'
 import {contact} from '../../../../constant/constant'
 import React from 'react';
+import {Helmet} from "react-helmet";
 
 // жсх розмітка
 const Contact = props => {
 
 	return <div className={classes.wrapper}>
+	
+		<Helmet>
+
+			<title>Лунаріум, контакти, інтернет магазин сувенірів,</title>
+			<meta name="description" content="
+				контактна інформація, як з нами звязатись
+			"/>
+		</Helmet>
 
 		<section className={classes.section}>
-			<h2>Наші контакти</h2>
+			<h1>Наші контакти</h1>
 			<div className={classes.about}>
 				<span>Назва</span>
 				<span>Лунаріум</span>
